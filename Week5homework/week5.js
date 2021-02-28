@@ -21,8 +21,8 @@ const data = [
     "catchPhrase": "Multi-layered client-server neural-net",
     "bs": "harness real-time e-markets"
   }
-
-{
+},
+ {
   "id": 2,
   "name": "Ervin Howell",
   "username": "Antonette",
@@ -44,7 +44,7 @@ const data = [
     "catchPhrase": "Proactive didactic contingency",
     "bs": "synergize scalable supply-chains"
   }
-},
+ },
 {
   "id": 3,
   "name": "Clementine Bauch",
