@@ -1,5 +1,3 @@
-const { get } = require("http");
-
 const pizzaToppings = ["Cheese", "Sausage", "Hamburger", "Olives","Bacon"];
 
 function greetCustomer() {
@@ -22,11 +20,16 @@ greetCustomer();
 console.log(`${order}. coming up!`);
 return [size,crust, toppings];
   }
-  let customerOrder = getPizzaOrder("Large","Thin","Cheese","Bacon")
+  let customerOrder = getPizzaOrder(
+    "Large",
+    "Thin",
+    "Cheese",
+    "Bacon"
+    );
 
 getPizzaOrder("Large","Thin");
-
-function preparePizza(orderSize, orderCrust, orderToppings){
+//array
+function preparePizza([orderSize, orderCrust, orderToppings]){
   console.log("...Cooking Pizza....");
   return{
     size: orderSize,
@@ -35,7 +38,7 @@ function preparePizza(orderSize, orderCrust, orderToppings){
   };
 }
 preparePizza();
-
+//just reasigning from a array to key value pairs the size, crust,toppings this is a key value
 let cookedPizza = preparePizza(customerOrder);
 
 function servePizza(pizza){
