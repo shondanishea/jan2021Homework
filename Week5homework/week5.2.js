@@ -1205,3 +1205,8 @@ const data = [
 const user9ToDo = data.filter((task) => task.userId ===9);
 console.log(user9ToDo);
 
+const id9 = user9ToDo.filter((data) => (data.completed === false));
+console.log(id9);
+
+
+
